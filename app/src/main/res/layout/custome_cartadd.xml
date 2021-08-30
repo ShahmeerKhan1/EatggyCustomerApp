@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/lvl_addremove"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_addcart"
+        android:gravity="center"
+        android:elevation="7dp"
+        android:padding="3dp"
+        android:layout_margin="3dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/img_mins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:gravity="center|left">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_remove"
+                android:padding="3dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtcount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:minWidth="20dp"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/img_plus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+
+            android:gravity="center|right">
+
+            <ImageView
+
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_add"
+                android:tint="@color/colorgreen"
+                android:padding="3dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lvl_addcart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_addcart"
+        android:layout_margin="3dp"
+        android:elevation="7dp"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="82dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="ADD"
+            android:fontFamily="@font/gilroybold"
+            android:textColor="@color/colorgreen"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</LinearLayout>

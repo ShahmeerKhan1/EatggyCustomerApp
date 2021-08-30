@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.yummoidmkschinky.customerapp">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name="com.yummoidmkschinky.customerapp.MyApplication"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Csfoodapp.NoActionBar"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:usesCleartextTraffic">
+        <activity android:name="com.yummoidmkschinky.customerapp.activity.AddMoneyActivity"></activity>
+        <activity android:name="com.yummoidmkschinky.customerapp.activity.MywalletActivity" />
+        <activity android:name="com.yummoidmkschinky.customerapp.activity.WalletActivatActivity" />
+        <activity android:name="com.yummoidmkschinky.customerapp.activity.ActivateMunnyActivity" />
+        <activity android:name="com.yummoidmkschinky.customerapp.activity.HelpDetailsActivity" />
+        <activity android:name="com.yummoidmkschinky.customerapp.activity.HelpActivity" />
+        <activity android:name="com.yummoidmkschinky.customerapp.activity.SearchRestorentActivity" />
+        <activity android:name="com.yummoidmkschinky.customerapp.activity.SearchProductActivity" />
+        <activity android:name="com.yummoidmkschinky.customerapp.activity.RatesActivity" />
+        <activity android:name="com.yummoidmkschinky.customerapp.activity.FaqActivity" />
+        <activity android:name="com.yummoidmkschinky.customerapp.activity.OffersActivity" />
+        <activity android:name="com.yummoidmkschinky.customerapp.activity.FavritsActivity" />
+        <activity android:name="com.yummoidmkschinky.customerapp.activity.OrderActivity" />
+        <activity android:name="com.yummoidmkschinky.customerapp.activity.AddressListActivity" />
+        <activity android:name="com.yummoidmkschinky.customerapp.activity.DeliveryLocationActivity" />
+        <activity android:name="com.yummoidmkschinky.customerapp.activity.RestorentListActivity" />
+        <activity android:name="com.yummoidmkschinky.customerapp.activity.CartActivity" />
+        <activity android:name="com.yummoidmkschinky.customerapp.activity.RestaurantsActivity" />
+        <activity android:name="com.yummoidmkschinky.customerapp.activity.HomeActivity" />
+        <activity android:name="com.yummoidmkschinky.customerapp.activity.MapActivity" />
+        <activity android:name="com.yummoidmkschinky.customerapp.activity.CreateAcountActivity" />
+        <activity android:name="com.yummoidmkschinky.customerapp.activity.LoginActivity" />
+        <activity android:name="com.yummoidmkschinky.customerapp.activity.VerifyPhoneActivity" />
+        <activity android:name="com.yummoidmkschinky.customerapp.activity.PaypalActivity" />
+        <activity android:name="com.yummoidmkschinky.customerapp.activity.PaystackActivity" />
+        <activity android:name="com.yummoidmkschinky.customerapp.activity.RazerpayActivity" />
+        <activity android:name="com.yummoidmkschinky.customerapp.activity.StripPaymentActivity" />
+        <activity android:name="com.yummoidmkschinky.customerapp.activity.FlutterwaveActivity" />
+        <activity android:name="com.yummoidmkschinky.customerapp.activity.PaytmActivity" />
+        <activity android:name="com.yummoidmkschinky.customerapp.activity.SenangpayActivity" />
+        <activity android:name="com.yummoidmkschinky.customerapp.activity.CoupunActivity" />
+        <activity android:name="com.yummoidmkschinky.customerapp.map.OrderTrackerActivity" />
+        <activity android:name="com.yummoidmkschinky.customerapp.activity.ForgotActivity" />
+        <activity android:name="com.yummoidmkschinky.customerapp.activity.ChanegPasswordActivity" />
+        <activity android:name="com.yummoidmkschinky.customerapp.MainActivity" />
+         <activity android:name="com.yummoidmkschinky.customerapp.activity.ReferlActivity" />
+        <activity
+            android:name="com.yummoidmkschinky.customerapp.activity.IntroActivity"
+            android:theme="@style/Theme.Csfoodapp.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/api_key" />
+    </application>
+
+</manifest>

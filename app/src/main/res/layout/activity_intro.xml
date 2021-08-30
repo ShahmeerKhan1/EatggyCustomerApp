@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical">
+
+    <com.yummoidmkschinky.customerapp.utiles.AutoScrollViewPager
+        android:id="@+id/vpPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:gravity="center|top"
+            android:orientation="vertical">
+
+            <com.merhold.extensiblepageindicator.ExtensiblePageIndicator
+                android:id="@+id/flexibleIndicator"
+                android:layout_width="150dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+
+                android:layout_marginRight="10dp"
+                app:indicatorActiveColor="@color/colorPrimary"
+                app:indicatorInactiveColor="@color/colorgrey"
+                app:indicatorPadding="10dp"
+                app:indicatorRadius="6dp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Ready to order frome top restaurants?"
+
+            android:textSize="10dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/btn_location"
+            android:layout_width="250dp"
+            android:layout_height="38dp"
+
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/rounded_button"
+            android:gravity="center"
+            android:text="SET DELIVERY LOCATION"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/lvl_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:text="Have an account?"
+
+                android:textSize="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:text="  Login"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
